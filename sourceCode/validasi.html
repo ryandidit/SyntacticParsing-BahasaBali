@@ -1,0 +1,84 @@
+{% extends 'base.html' %} {% block content %}
+{% include 'partials/_navbar.html'%}
+  <div class="bg-light">
+  <div class="h-100  container">
+  <div class="d-flex justify-content-between">
+    <h3 class="p-3">
+      Validasi
+    </h3>
+    <div class="p-3">
+        <a class="btn btn-primary px-4" href="{% url 'parse:rules' %}">Rules</a>
+    </div>
+
+    </div>
+    {% if akurasi %}
+          <div class="alert alert-primary" role="alert">
+  Akurasi: {{akurasi}} %
+        </div>
+    {% endif %}
+  <div class=" mt-3">
+    <div class="mt-2 pb-3">
+      {% for val in data %}
+      <div class="p-3 shadow rounded-3 mt-3">
+        <h4>
+          {{val.kalimat}}
+          {% if val.check.CYK.validasi == "Non-Valid" %}
+          <span class="badge bg-danger">Non-Valid</span>
+          {% else %}
+          <span class="badge bg-success">Valid</span>
+          {% endif %}
+
+        </h4>
+        {% if val.check.CYK.validasi == "Non-Valid" %}
+        <div class="alert alert-danger" role="alert">
+          {{val.check.CYK.Alasan}}
+        </div>
+        {% endif %}
+        <div class="accordion accordion-flush" id="accordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="flush-head{{forloop.counter}}">
+              <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-detail{{forloop.counter}}" aria-expanded="false"
+                aria-controls="flush-detail{{forloop.counter}}">
+                Detail
+              </button>
+            </h3>
+            <div id="flush-detail{{forloop.counter}}" class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne" data-bs-parent="#flush-detail{{forloop.counter}}">
+              <div class="accordion-body">
+                <table class="table table-bordered">
+                  <tbody>
+                      {% for res in val.check.cell %}
+                        <tr>
+                          {% for fin in res %}
+                            {% if fin %}
+                               <td>{{fin}}</td>
+                               {% else %}
+                               <td></td>
+                            {% endif %}
+                          {% endfor %}
+                        </tr>
+                      {% endfor %} 
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      {% for res in val.check.CYK.kata %}
+                        <th scope="col">{{res}}</th>
+                      {% endfor %}
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+</div>
+
+  </div>
+{% endblock %}
+
