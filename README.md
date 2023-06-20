@@ -17,15 +17,24 @@
 <h3>Tampilan Aplikasi</h3>
 <table>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td><img src=![WhatsApp Image 2020-12-20 at 14 17 56](https://github.com/ryandidit/SyntacticParsing-BahasaBali/assets/65303453/6c3e653f-5a03-4537-91f8-2fb0e3d2af8b)
+></td>
+    <td><img src=![WhatsApp Image 2020-12-20 at 14 17 57](https://github.com/ryandidit/SyntacticParsing-BahasaBali/assets/65303453/db1b13d2-17e8-4ece-bf13-75ad1bfbbf16)
+></td>
+    <td><img src=![WhatsApp Image 2020-12-20 at 14 17 59](https://github.com/ryandidit/SyntacticParsing-BahasaBali/assets/65303453/0e92b1ee-061d-4af1-a62a-d326b04303bb)
+></td>
+    <td><img src=![WhatsApp Image 2020-12-20 at 14 18 00](https://github.com/ryandidit/SyntacticParsing-BahasaBali/assets/65303453/ffe9e097-e4fb-4eb3-b452-3a784ea82bd7)
+></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td><img src=https://github.com/ryandidit/SyntacticParsing-BahasaBali/assets/65303453/d8aa9f76-c8fd-40e8-8401-5241e9766929
+></td>
+    <td><img src=https://github.com/ryandidit/SyntacticParsing-BahasaBali/assets/65303453/f96421ee-3460-4b82-8301-b629e2073217
+></td>
+    <td><img src=https://github.com/ryandidit/SyntacticParsing-BahasaBali/assets/65303453/da0ac72b-e2a3-4ed0-8e82-12705f715435
+></td>
+    <td><img src=https://github.com/ryandidit/SyntacticParsing-BahasaBali/assets/65303453/a4b94d1c-da01-406c-acff-65cdccb9087a
+></td>
   </tr>
 </table>
+
