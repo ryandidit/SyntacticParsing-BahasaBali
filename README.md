@@ -1,4 +1,4 @@
-# Syntactic-Parsing
+# SyntacticParsing-BahasaBali
 
 <h3>Pengembang</h3>
 
