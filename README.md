@@ -3,11 +3,11 @@
 <h3>Pengembang</h3>
 
 <ul>
-  <li> Ryan Paramaditya </li>
   <li> Aditya Mahardika </li>
-  <li> Waisul Kuroni </li>
-  <li> Gowinda </li>
   <li> Edo Khrisnanda </li>
+  <li> Gowinda </li>
+  <li> Ryan Paramaditya </li>
+  <li> Waisul Kuroni </li>
 </ul>
 
 <h3>Penjelasan</h3>
